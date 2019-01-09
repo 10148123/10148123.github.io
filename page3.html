@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>問題２</title>
+	
+		<style>
+		
+		@media screen and {max-width:480px;
+			height:auto;}
+		body{background-color:#F8FFDD;}
+		
+			body{text-align: center}
+			
+	</style>
+	
+</head>
+<body>
+<div id="page1">
+    <h1>育成ゲーム「あんさんぶるスターズ」の最高レア度の出現確率は下記のうちどれでしょう。","１.２５％","１.００％","１.７５％</h1>
+
+    <div><a href="#" onclick="machigai()">1.25%</a></div>
+    <div><a href="#" onclick="seikai()">1.00%</a></div>
+    <div><a href="#" onclick="seikai()">1.75%</a></div>
+    
+</div>
+
+    <script>
+        var hit = Number(localStorage.hit);
+
+        function seikai(){
+            hit = hit+1;
+            localStorage.hit = hit;
+            location.href = "kekka.html";
+        }
+        function machigai(){
+            localStorage.hit = hit;
+            location.href = "kekka.html";
+        }
+        
+    </script>
+</body>
+</html>

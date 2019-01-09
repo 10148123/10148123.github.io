@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>問題１</title>
+	
+		<style>
+		
+		@media screen and {max-width:480px;
+			height:auto;}
+		body{background-color:#F8FFDD;}
+			
+			body{text-align: center}
+		
+			
+	</style>
+	
+</head>
+<body>
+<div id="page1">
+    <h1>音楽ゲーム「アイドルマスターシンデレラガールズ スターライトステージ」の最高レア度の出現確率は、下記のうちどれでしょう。</h1>
+    <div><a href="#" onclick="seikai()">３.０００％</a></div>
+    <div><a href="#" onclick="machigai()">１.５００％</a></div>
+    <div><a href="#" onclick="machigai()">１.０００％</a></div>
+</div>
+
+    <script>
+        var hit=0;
+
+        function seikai(){
+            hit = hit+1;
+            localStorage.hit = hit;
+            location.href = "page2.html";
+        }
+        function machigai(){
+            localStorage.hit = hit;
+            location.href = "page2.html";
+        }
+        
+    </script>
+</body>
+</html>
