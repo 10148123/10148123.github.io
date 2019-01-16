@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>問題１</title>
+	
+	
+	<link rel="apple-touch-icon" sizes="180×180" href="512×512.png">
+	
+		<style>
+		
+		@media screen and {max-width:480px;
+			height:auto;}
+			
+			.spimg{
+			width: 100%;
+				height: auto;}
+			
+		body{background-color:#F8FFDD;}
+			
+			body{text-align: center}
+		
+			
+	</style>
+	
+</head>
+<body>
+<div id="page1">
+    <h1 style="font-size: 15px">育成ゲーム「仮面ライダーシティウォーズ」の最高レア度の出現確率は、下記のうちどれでしょう。</h1>
+	
+	<img src="仮面ライダー.jpg" width="80%" class="spimg">
+	
+    <div><a href="#" onclick="seikai()">５％</a></div>
+    <div><a href="#" onclick="machigai()">７％</a></div>
+    <div><a href="#" onclick="machigai()">３％</a></div>
+</div>
+
+    <script>
+        var hit=0;
+
+        function seikai(){
+            hit = hit+1;
+            localStorage.hit = hit;
+            location.href = "kekka.html";
+        }
+        function machigai(){
+            localStorage.hit = hit;
+            location.href = "kekka.html";
+        }
+        
+    </script>
+</body>
+</html>
